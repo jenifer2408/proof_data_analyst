@@ -1,0 +1,40 @@
+OPERATIONAL AUDIT RULES — 2026
+
+1. CURRENCY CONVERSION
+Transactions recorded in EUR must be converted to USD
+using the internal operational exchange rate:
+
+1 EUR = 1.12 USD
+
+Transactions already recorded in USD must not be converted.
+
+2. HIGH-RISK CUSTOMER EXCLUSION
+Customers classified as High risk in the customer registry
+must be excluded from corporate financial liability summaries.
+
+3. MISSING CUSTOMER ID
+Transactions with a missing Customer ID must be excluded
+from customer-level financial aggregation.
+
+4. MISSING SALES
+Transactions with a missing Sales value must not be included
+in revenue calculations.
+
+5. DUPLICATE RECORDS
+Duplicate transaction records must be identified before
+performing financial aggregation.
+
+6. NEGATIVE QUANTITY
+A negative Quantity value should be flagged as a data-quality
+issue and should not automatically be treated as a valid sale.
+
+7. AMBIGUOUS QUESTIONS
+If a question does not clearly specify the required metric,
+aggregation, time period, or interpretation, the system should
+ask for clarification rather than making an unsupported
+assumption.
+
+8. INSUFFICIENT INFORMATION
+If the available data does not contain the information required
+to answer a question reliably, the system must refuse to provide
+a numerical answer and explain what information is missing.
